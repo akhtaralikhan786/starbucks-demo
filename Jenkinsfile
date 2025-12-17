@@ -61,7 +61,7 @@ pipeline{
         }
         stage('App Deploy to Docker container'){
             steps{
-                sh 'docker run -d --name starbucks -p 3000:3001 akhtaralikhan171184/starbucks:latest'
+                sh 'docker run -d --name starbucks -p 3001:3000 akhtaralikhan171184/starbucks:latest'
             }
         }
 
